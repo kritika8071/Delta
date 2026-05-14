@@ -7,20 +7,33 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="menuScreen">
+        <div class="menuBox">
+          <p id="playerText">Choose Number of players</p>
+          <select id="dropdown">
+            <option selected disabled value="0"></option>
+            <option value="2">2 players</option>
+            <option value="3">3 players</option>
+            <option value="4">4 players</option>
+          </select>
+        </div>
+        <button id="startBtn">START</button>
+    </div>
     <div class="screen">
      <div class="topPane">
         <div class="title">CHAIN REACTION GAME</div>
         <div class="right">
+            <div class="scoreboard"></div>
+            <button id="bombBtn">💣</button>
             <div class="playerTimer">0:15</div>
             <div class="gameTimer">03:00</div>
             <button id="pause" onclick="pause()">⏸</button>
-            <button id="resume" onclick="startGameTimer() ,startPlayerTimer()">▶</button>
-            <div class="greenScore">Green: 0</div>
-            <div class="blueScore">Blue: 0</div>
+            <button id="resume" onclick="startGameTimer() ,resumePlayerTimer()">▶</button>
         </div>
      </div>
      <div class="gameboard">
      </div>
+     <div class="visualMoves"></div>
     </div>
     <script src="index.js"></script>
 </body>
