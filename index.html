@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="screen">
+     <div class="topPane">
+        <div class="title">CHAIN REACTION GAME</div>
+        <div class="right">
+            <div class="playerTimer">0:15</div>
+            <div class="gameTimer">03:00</div>
+            <button id="pause" onclick="pause()">⏸</button>
+            <button id="resume" onclick="startGameTimer() ,startPlayerTimer()">▶</button>
+            <div class="greenScore">Green: 0</div>
+            <div class="blueScore">Blue: 0</div>
+        </div>
+     </div>
+     <div class="gameboard">
+     </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

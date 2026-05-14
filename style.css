@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Cause:wght@100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@media(min-width: 600px){  
+
+.blueScore,
+.greenScore,
+.gameTimer,
+.playerTimer{
+    font-family: monospace;
+    font-weight: 600;
+    padding-top: 5px;
+}
+
+.blueScore{
+    position: absolute;
+    min-width: 60px;
+    right: 0;
+}
+
+.greenScore{
+    position: absolute;
+    min-width: 60px;
+    right: 70px;
+}
+
+#pause{
+    background-color: transparent;
+    cursor: pointer;
+    color: black;
+    font-weight: 700;
+    position: absolute;
+    right:130px;
+}
+
+#resume{
+    background-color: transparent;
+    cursor: pointer;
+    color: black;
+    font-weight: 700;
+    position: absolute;
+    right: 150px;
+}
+
+.topPane{
+    margin-bottom: 60px;
+    width: 100%;
+    display: flex;
+}
+
+.gameTimer{
+    min-width: 70px;
+    position: absolute;
+    right: 150px;
+}
+
+.playerTimer{
+    min-width: 70px;
+    position: absolute;
+    right: 190px;
+}
+}
+
+@media(max-width:599px){
+
+.topPane{
+    margin-bottom: 70px;
+}
+
+.blueScore,
+.greenScore,
+.gameTimer,
+.playerTimer{
+    font-family: monospace;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+
+.right{
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+}
+.blueScore{
+    position: absolute;
+    min-width: 60px;
+    right: 0;
+    bottom:0;
+}
+
+.greenScore{
+    position: absolute;
+    min-width: 60px;
+    right: 70px;
+    bottom: 0px;
+}
+
+#pause{
+    background-color: transparent;
+    cursor: pointer;
+    color: black;
+    font-weight: 700;
+    position: absolute;
+    left:110px;
+    bottom: 6px;
+}
+
+#resume{
+    background-color: transparent;
+    cursor: pointer;
+    color: black;
+    font-weight: 700;
+    position: absolute;
+    left: 95px;
+    bottom: 6.5px;
+}
+
+.gameTimer{
+    min-width: 70px;
+    position: absolute;
+    left: 50px;
+    bottom: 0;
+}
+
+.playerTimer{
+    min-width: 70px;
+    position: absolute;
+    left: 5px;
+    bottom: 0;
+}
+}
+
+.gameboard {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(6, min(14vw, 40px));
+    grid-template-rows: repeat(12, min(14vw, 40px));
+    gap: 1px;
+    
+}
+
+.screen{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+.title{
+    font-size: larger;
+    font-weight: 700;
+    position: absolute;
+    top: 0;
+    left: 10px;
+}
+
+.gridcell{
+    position: relative;
+    cursor: pointer;
+    background-color: hsl(0, 0%, 0%);
+}
+
+.gridcell:hover{
+    background-color: hsl(0, 0%, 30%);
+}
+
+.circle2{
+    visibility:hidden;
+}
+
+.circle3{
+    visibility: hidden;
+}
+
+button {
+    background-color: black;
+    color: white;
+    border: none;
+    text-align: center;
+    border-radius: 3px;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(149, 173, 193);
+    font-family: "DM Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.circle1{
+    position: absolute;
+    top: 12.5px;
+    left: 12.5px;
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    background-color: green;
+    visibility: hidden;
+}
+
+.circle21{ 
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+}
+
+.circle22{ 
+    position: absolute;
+    top: 15px;
+    left: 17px;
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+}
+
+.circle31{ 
+    position: absolute;
+    top: 10px;
+    left: 14.5px;
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+}
+
+.circle32{ 
+    position: absolute;
+    top: 15px;
+    left: 18px;
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+}
+
+.circle33{ 
+    position: absolute;
+    top: 15px;
+    left: 12px;
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+}
+
+
