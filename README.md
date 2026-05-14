@@ -1,5 +1,5 @@
-Normal Mode:
+Hacker Mode:
 https://kritika8071.github.io/Delta/
 
-Hacker Mode:
+Normal Mode:
 https://kritika8071.github.io/Deltav2/
